@@ -148,6 +148,28 @@ public class Profile
 		//v.add("Train a ");
 		v.add("find ");
 		v.add("destroy ");
+		
+		s.add("a fortress");
+		s.add("a cult");
+		s.add("a high ranking officer of some organization");
+		s.add("a group of bandits");
+		s.add("a group of monsters");
+		s.add("a rising coup");
+		s.add("a band of rebels");
+		s.add("a tribe");
+		s.add("a dungeon");
+		s.add("a boat lost at sea");
+		s.add("a noble");
+		s.add("a monster");
+		s.add("an artefact");
+		s.add("a monster");
+		s.add("a demon");
+		s.add("a tomb");
+		s.add("a graveyard");
+		s.add("an abandoned town");
+		s.add("a monestary");
+		s.add("an old temple");
+		s.add("ruins");
 		}else {
 			v.add("steal ");
 			v.add("fight ");
@@ -161,51 +183,26 @@ public class Profile
 			v.add("train ");
 			v.add("find ");
 			
-		}
-		
-		if(var<50) 
-		{
-			s.add("a fortress");
-			s.add("a cult");
+			s.add("an enemy faction member");
 			s.add("a high ranking officer of some organization");
 			s.add("a group of bandits");
 			s.add("a group of monsters");
 			s.add("a rising coup");
 			s.add("a band of rebels");
-			s.add("a tribe");
-			s.add("a dungeon");
-			s.add("a boat lost at sea");
+			s.add("a witch");
+			s.add("a necromancer");
+			s.add("a sorceror");
+			s.add("a corrupt governor");
+			
 			s.add("a noble");
 			s.add("a monster");
 			s.add("an artefact");
 			s.add("a monster");
 			s.add("a demon");
-			s.add("a tomb");
-			s.add("a graveyard");
-			s.add("an abandoned town");
-			s.add("a monestary");
-			s.add("an old temple");
-			s.add("ruins");
-		}else {
-		
-		
-		s.add("an enemy faction member");
-		s.add("a high ranking officer of some organization");
-		s.add("a group of bandits");
-		s.add("a group of monsters");
-		s.add("a rising coup");
-		s.add("a band of rebels");
-		s.add("a witch");
-		s.add("a necromancer");
-		s.add("a sorceror");
-		s.add("a corrupt governor");
-		
-		s.add("a noble");
-		s.add("a monster");
-		s.add("an artefact");
-		s.add("a monster");
-		s.add("a demon");
+			
 		}
+		
+		
 		
 		
 		String acc="Helped ";
@@ -538,6 +535,10 @@ public class Profile
 		
 		v.add("Keeps a lucky charm");
 		
+		v.add("Is a nudist");
+		
+		v.add("Loves monsters");
+		
 		v.add("Has an unusual charm reminiscent of a deceased lover/friend");
 		
 		v.add("Only wears wigs");
@@ -683,7 +684,9 @@ public class Profile
 			
 			age = r.nextInt(6);
 			
-			age=Math.round(age)+12;
+			age=age+12;
+			
+			age=Math.round(age);
 			
 			
 		}
@@ -702,8 +705,8 @@ public class Profile
 		{
 			
 			age = r.nextInt(12);
-			
-			age=Math.round(age)+5;
+			age=age+8;
+			age=Math.round(age);
 			
 			
 			
