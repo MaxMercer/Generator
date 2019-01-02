@@ -28,6 +28,10 @@ public class Profile
 	
 	String myAccomplishments;
 	
+	String mySO;
+	
+	BirthStats myBirth;
+	
 	Profile()
 	{
 		myName = genName();
@@ -52,8 +56,48 @@ public class Profile
 		
 		myAccomplishments = genAccomplishments();
 		
+		mySO=genSO();
+		
 	}
 	
+	private String genSO() 
+	{
+
+		int var;
+		
+		String so = null;
+		
+		Random r = new Random();
+		
+		var = r.nextInt(500);
+		
+		so="S";
+		
+		if(var%2==0)
+		{
+			so="S";
+		}
+		
+		if(var%3==0)
+		{
+			so="G";
+		}
+		
+		
+		if(var%4==0)
+		{
+			so="P";
+		}
+		
+		if(var%36==0)
+		{
+			so="A";
+		}
+		
+		
+		return so;
+	}
+
 	private String genAccomplishments() 
 	{
 		Vector n = new Vector();
@@ -735,6 +779,8 @@ public class Profile
 		System.out.println("COMMUNITY: "+myCommunity);
 		
 		System.out.println("SES: "+mySES);
+		
+		System.out.println("SO: "+mySO );
 		
 		System.out.println("FAITH: "+myReligion.toString());
 		
