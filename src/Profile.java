@@ -60,6 +60,11 @@ public class Profile
 		
 	}
 	
+	public void genNewSO()
+	{
+		mySO = this.genSO();
+	}
+	
 	private String genSO() 
 	{
 
@@ -257,6 +262,11 @@ public class Profile
 		acc=(String) acc +s.get(r.nextInt(s.size()));
 		return acc;
 	}
+	
+	public void genNewPopularity()
+	{
+		myPopularity = this.genPopularity();
+	}
 
 	private String genPopularity() 
 	{
@@ -285,6 +295,11 @@ public class Profile
 		return s;
 	}
 
+	public String genNewName()
+	{
+		return myName = this.genName();
+	}
+	
 	private String genName()
 	{
 		String name="";
@@ -418,6 +433,11 @@ public class Profile
 		
 	}
 	
+	public void genHumor()
+	{
+		myHumour = this.genHumour();
+	}
+	
 	private String genHumour()
 	{
 		Vector v = new Vector();
@@ -438,6 +458,11 @@ public class Profile
 		v.add("Intelligent");
 		
 		return (String) v.get(new Random().nextInt(v.size()));
+	}
+	
+	public void genNewSES()
+	{
+		mySES = this.genSES();
 	}
 	
 	private String genSES()
@@ -470,6 +495,11 @@ public class Profile
 		return null;
 		
 		
+	}
+	
+	public void genNewJob()
+	{
+		myOccupation = this.genJob();
 	}
 	
 	private String genJob()
@@ -555,6 +585,11 @@ public class Profile
 			job = job + (String) v.get(r.nextInt(v.size()));
 		
 			return job;
+	}
+	
+	public void genNewQuirks()
+	{
+		myQuirks = this.genQuirks();
 	}
 	
 	private String[] genQuirks() 
@@ -657,7 +692,12 @@ public class Profile
 		return q;
 	}
 
-	public String genGender()
+	public void genNewGender()
+	{
+		myGender = this.genGender();
+	}
+	
+	private String genGender()
 	{
 		Random r = new Random();
 		
@@ -711,7 +751,12 @@ public class Profile
 		
 	}
 	
-	public String genAge()
+	public void genNewAge()
+	{
+		myAge = this.genAge();
+	}
+	
+	private String genAge()
 	{	
 		double age = 0;
 		

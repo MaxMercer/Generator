@@ -45,7 +45,7 @@ public class Faction
 		
 		if(myLeader.myReligion.myPopularity.contains("Loc"))
 		{
-			size=Integer.parseInt(myLeader.myReligion.myNumberOfFollowers)*100;
+			size=(int) Double.parseDouble(myLeader.myReligion.myNumberOfFollowers)*100;
 			size=(int) (size+new Random().nextGaussian()*4+67);
 			return String.valueOf(size);
 		}
